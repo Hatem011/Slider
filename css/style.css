@@ -1,0 +1,31 @@
+.item-caption
+{
+   bottom: 10px;
+    left: 10%;
+    background-color: #fff;
+    padding: 5px;
+    width: 80%;
+}
+.layer
+{
+    position: fixed;
+    inset: 0;
+    background-color: rgba(0, 0, 0, .5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+   
+}
+.layer-item
+{
+    width: 45%;
+    height: 500px;
+    background-image:url("../images/portfolio-1.jpg") ;
+    background-size: 100% 100%; 
+}
+.layer-item .close
+{
+    top: 5px;
+    right: 5px;
+}
