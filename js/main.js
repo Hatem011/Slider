@@ -51,3 +51,35 @@ if(currentIndex<0)
 currentSrc=imgs[currentIndex].src
 layerItem.style.backgroundImage=`url(${currentSrc})`
 })
+
+
+
+document.addEventListener('keyup',function(e){
+
+    if(layer.style.display!="") {
+
+if(e.code=='ArrowRight')
+{
+    currentIndex++
+if(currentIndex>imgs.length-1)
+{
+    currentIndex=0
+}
+currentSrc=imgs[currentIndex].src
+layerItem.style.backgroundImage=`url(${currentSrc})`
+}
+else if(e.code=='ArrowLeft')
+{
+    currentIndex--
+if(currentIndex<0)
+{
+    currentIndex=imgs.length-1
+}
+currentSrc=imgs[currentIndex].src
+layerItem.style.backgroundImage=`url(${currentSrc})`
+}
+else if (e.code=='Escape') {
+    layer.style.display="none"
+}
+    }
+})
